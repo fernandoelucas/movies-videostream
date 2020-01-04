@@ -1,0 +1,489 @@
+2020-01-02 00:04:12,216 INFO com.movies.stream.VideoStreamApplication [main] Starting VideoStreamApplication on lucas-PC with PID 5148 (D:\Users\lucas\git\KnowledgeFactory\springboot-videostream\target\classes started by lucas in D:\Users\lucas\git\KnowledgeFactory\springboot-videostream)
+2020-01-02 00:04:12,218 INFO com.movies.stream.VideoStreamApplication [main] No active profile set, falling back to default profiles: default
+2020-01-02 00:04:13,290 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2020-01-02 00:04:13,290 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-01-02 00:04:13,294 INFO org.apache.catalina.core.AprLifecycleListener [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;D:\work\apache-maven-3.6.2\\BIN;C:\Program Files\Portugal Identity Card\;C:\Program Files\Git\cmd;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\AppData\Roaming\npm;D:\work\apps;D:\work\apps\Kubernetes\Minikube;D:\work\apps\Docker Toolbox;D:\work\apps\Docker Toolbox;D:\sts-bundle\sts-3.9.4.RELEASE;;.]
+2020-01-02 00:04:13,349 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2020-01-02 00:04:14,219 INFO com.movies.stream.VideoStreamApplication [main] Started VideoStreamApplication in 2.222 seconds (JVM running for 2.766)
+2020-01-02 00:04:46,236 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-02 00:07:01,076 INFO com.movies.stream.VideoStreamApplication [main] Starting VideoStreamApplication on lucas-PC with PID 4884 (D:\Users\lucas\git\KnowledgeFactory\springboot-videostream\target\classes started by lucas in D:\Users\lucas\git\KnowledgeFactory\springboot-videostream)
+2020-01-02 00:07:01,078 INFO com.movies.stream.VideoStreamApplication [main] No active profile set, falling back to default profiles: default
+2020-01-02 00:07:02,230 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2020-01-02 00:07:02,230 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-01-02 00:07:02,234 INFO org.apache.catalina.core.AprLifecycleListener [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;D:\work\apache-maven-3.6.2\\BIN;C:\Program Files\Portugal Identity Card\;C:\Program Files\Git\cmd;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\AppData\Roaming\npm;D:\work\apps;D:\work\apps\Kubernetes\Minikube;D:\work\apps\Docker Toolbox;D:\work\apps\Docker Toolbox;D:\sts-bundle\sts-3.9.4.RELEASE;;.]
+2020-01-02 00:07:02,291 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2020-01-02 00:07:03,150 INFO com.movies.stream.VideoStreamApplication [main] Started VideoStreamApplication in 2.298 seconds (JVM running for 2.846)
+2020-01-02 00:07:33,063 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-02 00:07:46,464 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-10] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.io.FileNotFoundException: file [D:\movies\1980\1.mp4] cannot be resolved in the file system for resolving its last-modified timestamp
+	at org.springframework.core.io.AbstractResource.lastModified(AbstractResource.java:174)
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:455)
+	at com.movies.stream.controller.StreamController.byterange(StreamController.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at com.movies.stream.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:48)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2020-01-02 00:08:29,401 INFO com.movies.stream.VideoStreamApplication [main] Starting VideoStreamApplication on lucas-PC with PID 21696 (D:\Users\lucas\git\KnowledgeFactory\springboot-videostream\target\classes started by lucas in D:\Users\lucas\git\KnowledgeFactory\springboot-videostream)
+2020-01-02 00:08:29,403 INFO com.movies.stream.VideoStreamApplication [main] No active profile set, falling back to default profiles: default
+2020-01-02 00:08:30,540 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2020-01-02 00:08:30,541 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-01-02 00:08:30,544 INFO org.apache.catalina.core.AprLifecycleListener [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;D:\work\apache-maven-3.6.2\\BIN;C:\Program Files\Portugal Identity Card\;C:\Program Files\Git\cmd;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\AppData\Roaming\npm;D:\work\apps;D:\work\apps\Kubernetes\Minikube;D:\work\apps\Docker Toolbox;D:\work\apps\Docker Toolbox;D:\sts-bundle\sts-3.9.4.RELEASE;;.]
+2020-01-02 00:08:30,602 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2020-01-02 00:08:31,422 INFO com.movies.stream.VideoStreamApplication [main] Started VideoStreamApplication in 2.249 seconds (JVM running for 2.808)
+2020-01-02 00:08:36,102 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-02 00:08:36,569 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-6] Movie starts:D:\movies\1980\2.mp4
+2020-01-02 00:09:27,957 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-5] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:09:46,188 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-4] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:10:06,257 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-6] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:10:14,050 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-3] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:10:14,064 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-2] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:10:14,138 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-1] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:10:33,771 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-6] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:10:33,884 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-3] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:10:57,721 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-4] Movie starts:D:\movies\1980\2.mp4
+2020-01-02 00:10:57,827 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-8] Movie starts:D:\movies\1980\2.mp4
+2020-01-02 00:11:19,442 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-4] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:11:25,089 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-3] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:11:25,101 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-7] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:11:25,653 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-1] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:11:48,407 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-1] Movie starts:D:\movies\1980\2.mp4
+2020-01-02 00:11:52,808 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-5] Movie starts:D:\movies\1980\2.mp4
+2020-01-02 00:11:58,258 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-9] Movie starts:D:\movies\1980\2.mp4
+2020-01-02 00:12:58,066 INFO com.movies.stream.VideoStreamApplication [main] Starting VideoStreamApplication on lucas-PC with PID 12380 (D:\Users\lucas\git\KnowledgeFactory\springboot-videostream\target\classes started by lucas in D:\Users\lucas\git\KnowledgeFactory\springboot-videostream)
+2020-01-02 00:12:58,068 INFO com.movies.stream.VideoStreamApplication [main] No active profile set, falling back to default profiles: default
+2020-01-02 00:12:59,142 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2020-01-02 00:12:59,142 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-01-02 00:12:59,146 INFO org.apache.catalina.core.AprLifecycleListener [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;D:\work\apache-maven-3.6.2\\BIN;C:\Program Files\Portugal Identity Card\;C:\Program Files\Git\cmd;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\AppData\Roaming\npm;D:\work\apps;D:\work\apps\Kubernetes\Minikube;D:\work\apps\Docker Toolbox;D:\work\apps\Docker Toolbox;D:\sts-bundle\sts-3.9.4.RELEASE;;.]
+2020-01-02 00:12:59,202 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2020-01-02 00:13:00,066 INFO com.movies.stream.VideoStreamApplication [main] Started VideoStreamApplication in 2.239 seconds (JVM running for 2.806)
+2020-01-02 00:13:14,996 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-02 00:13:15,203 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-6] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:13:33,492 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-5] Movie starts:D:\movies\1980\2.mp4
+2020-01-02 00:13:48,451 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-9] Movie starts:D:\movies\1980\2.mp4
+2020-01-02 00:13:50,540 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-10] Movie starts:D:\movies\1980\2.mp4
+2020-01-02 00:14:07,223 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-1] Movie starts:D:\movies\1980\2.mp4
+2020-01-02 00:14:20,856 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-8] Movie starts:D:\movies\1980\2.mp4
+2020-01-02 00:20:00,259 INFO com.movies.stream.VideoStreamApplication [main] Starting VideoStreamApplication on lucas-PC with PID 4456 (D:\Users\lucas\git\KnowledgeFactory\springboot-videostream\target\classes started by lucas in D:\Users\lucas\git\KnowledgeFactory\springboot-videostream)
+2020-01-02 00:20:00,262 INFO com.movies.stream.VideoStreamApplication [main] No active profile set, falling back to default profiles: default
+2020-01-02 00:20:00,309 INFO org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@159f197: startup date [Thu Jan 02 00:20:00 GMT 2020]; root of context hierarchy
+2020-01-02 00:20:01,364 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-01-02 00:20:01,378 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2020-01-02 00:20:01,378 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-01-02 00:20:01,381 INFO org.apache.catalina.core.AprLifecycleListener [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;D:\work\apache-maven-3.6.2\\BIN;C:\Program Files\Portugal Identity Card\;C:\Program Files\Git\cmd;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\AppData\Roaming\npm;D:\work\apps;D:\work\apps\Kubernetes\Minikube;D:\work\apps\Docker Toolbox;D:\work\apps\Docker Toolbox;D:\sts-bundle\sts-3.9.4.RELEASE;;.]
+2020-01-02 00:20:01,437 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2020-01-02 00:20:01,437 INFO org.springframework.web.context.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1128 ms
+2020-01-02 00:20:01,595 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-02 00:20:01,595 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-02 00:20:01,595 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-02 00:20:01,595 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-02 00:20:01,596 INFO org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean [localhost-startStop-1] Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-01-02 00:20:01,596 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'jwtAuthenticationFilter' to: [/*]
+2020-01-02 00:20:01,596 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2020-01-02 00:20:01,625 WARN org.springframework.web.servlet.resource.ResourceHttpRequestHandler [main] Locations list is empty. No resources will be served unless a custom ResourceResolver is configured as an alternative to PathResourceResolver.
+2020-01-02 00:20:01,689 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 7798c004-6950-49b5-9e84-e8acc51c721e
+
+2020-01-02 00:20:01,784 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 00:20:01,818 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.movies.stream.controller.StreamController.home(java.lang.String,java.lang.String,boolean)
+2020-01-02 00:20:01,819 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/byterange],methods=[GET]}" onto public void com.movies.stream.controller.StreamController.byterange(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2020-01-02 00:20:01,823 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-02 00:20:01,823 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-02 00:20:01,854 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 00:20:01,854 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 00:20:01,859 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page template: index
+2020-01-02 00:20:01,880 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@665522c2, org.springframework.security.web.context.SecurityContextPersistenceFilter@53a9fcfd, org.springframework.security.web.header.HeaderWriterFilter@150ede8b, org.springframework.web.filter.CorsFilter@41fe8e5f, org.springframework.security.web.authentication.logout.LogoutFilter@3d5790ea, com.movies.stream.security.JwtAuthenticationFilter@462fd2ac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d192aef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a9b9909, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3062f9f4, org.springframework.security.web.session.SessionManagementFilter@332820f4, org.springframework.security.web.access.ExceptionTranslationFilter@27b45ea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67efd2c2]
+2020-01-02 00:20:02,049 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@159f197: startup date [Thu Jan 02 00:20:00 GMT 2020]; root of context hierarchy
+2020-01-02 00:20:02,174 INFO org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer [main] ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-01-02 00:20:02,237 INFO org.springframework.jmx.export.annotation.AnnotationMBeanExporter [main] Registering beans for JMX exposure on startup
+2020-01-02 00:20:02,267 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-02 00:20:02,271 INFO com.movies.stream.VideoStreamApplication [main] Started VideoStreamApplication in 2.253 seconds (JVM running for 2.824)
+2020-01-02 00:20:23,091 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-02 00:20:23,092 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2020-01-02 00:20:23,104 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2020-01-02 00:20:23,278 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-6] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:20:23,653 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-7] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:20:25,656 INFO com.movies.stream.controller.StreamController [http-nio-8080-exec-8] Movie starts:D:\movies\2019\1.mp4
+2020-01-02 00:33:33,925 INFO com.movies.stream.VideoStreamApplication [main] Starting VideoStreamApplication on lucas-PC with PID 14500 (D:\Users\lucas\git\KnowledgeFactory\springboot-videostream\target\classes started by lucas in D:\Users\lucas\git\KnowledgeFactory\springboot-videostream)
+2020-01-02 00:33:33,927 INFO com.movies.stream.VideoStreamApplication [main] No active profile set, falling back to default profiles: default
+2020-01-02 00:33:33,964 INFO org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e316c74: startup date [Thu Jan 02 00:33:33 GMT 2020]; root of context hierarchy
+2020-01-02 00:33:35,046 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-01-02 00:33:35,062 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2020-01-02 00:33:35,062 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-01-02 00:33:35,065 INFO org.apache.catalina.core.AprLifecycleListener [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;D:\work\apache-maven-3.6.2\\BIN;C:\Program Files\Portugal Identity Card\;C:\Program Files\Git\cmd;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\AppData\Roaming\npm;D:\work\apps;D:\work\apps\Kubernetes\Minikube;D:\work\apps\Docker Toolbox;D:\work\apps\Docker Toolbox;D:\sts-bundle\sts-3.9.4.RELEASE;;.]
+2020-01-02 00:33:35,122 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2020-01-02 00:33:35,122 INFO org.springframework.web.context.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1158 ms
+2020-01-02 00:33:35,278 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-02 00:33:35,278 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-02 00:33:35,279 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-02 00:33:35,279 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-02 00:33:35,279 INFO org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean [localhost-startStop-1] Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-01-02 00:33:35,279 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'jwtAuthenticationFilter' to: [/*]
+2020-01-02 00:33:35,279 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2020-01-02 00:33:35,310 WARN org.springframework.web.servlet.resource.ResourceHttpRequestHandler [main] Locations list is empty. No resources will be served unless a custom ResourceResolver is configured as an alternative to PathResourceResolver.
+2020-01-02 00:33:35,380 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 64f45661-7d75-4e92-9b9e-c4456e9f5c56
+
+2020-01-02 00:33:35,503 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 00:33:35,539 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.movies.stream.controller.StreamController.home(java.lang.String,java.lang.String,boolean)
+2020-01-02 00:33:35,540 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/byterange],methods=[GET]}" onto public void com.movies.stream.controller.StreamController.byterange(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2020-01-02 00:33:35,544 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-02 00:33:35,544 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-02 00:33:35,581 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 00:33:35,581 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 00:33:35,587 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page template: index
+2020-01-02 00:33:35,612 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10fda3d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a9b9909, org.springframework.security.web.header.HeaderWriterFilter@2f61d591, org.springframework.web.filter.CorsFilter@2123064f, org.springframework.security.web.authentication.logout.LogoutFilter@2b22a1cc, com.movies.stream.security.JwtAuthenticationFilter@38f4d01c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a518813, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d75e7af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f6b687e, org.springframework.security.web.session.SessionManagementFilter@fb6097b, org.springframework.security.web.access.ExceptionTranslationFilter@69228e85, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34d4860f]
+2020-01-02 00:33:35,785 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e316c74: startup date [Thu Jan 02 00:33:33 GMT 2020]; root of context hierarchy
+2020-01-02 00:33:35,912 INFO org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer [main] ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-01-02 00:33:35,975 INFO org.springframework.jmx.export.annotation.AnnotationMBeanExporter [main] Registering beans for JMX exposure on startup
+2020-01-02 00:33:35,991 ERROR org.apache.catalina.core.StandardService [main] Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.movies.stream.VideoStreamApplication.main(VideoStreamApplication.java:14)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+2020-01-02 00:33:35,994 INFO org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+2020-01-02 00:33:36,002 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-02 00:33:36,004 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2020-01-02 00:33:36,005 INFO org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e316c74: startup date [Thu Jan 02 00:33:33 GMT 2020]; root of context hierarchy
+2020-01-02 00:33:36,007 INFO org.springframework.jmx.export.annotation.AnnotationMBeanExporter [main] Unregistering JMX-exposed beans on shutdown
+2020-01-02 00:33:37,337 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2020-01-02 00:33:37,337 INFO org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [RMI TCP Connection(2)-127.0.0.1] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@159f197: startup date [Thu Jan 02 00:20:00 GMT 2020]; root of context hierarchy
+2020-01-02 00:33:37,339 INFO org.springframework.jmx.export.annotation.AnnotationMBeanExporter [RMI TCP Connection(2)-127.0.0.1] Unregistering JMX-exposed beans on shutdown
+2020-01-02 01:10:52,986 INFO com.movies.stream.VideoStreamApplication [main] Starting VideoStreamApplication on lucas-PC with PID 13808 (D:\Users\lucas\git\KnowledgeFactory\springboot-videostream\target\classes started by lucas in D:\Users\lucas\git\KnowledgeFactory\springboot-videostream)
+2020-01-02 01:10:52,988 INFO com.movies.stream.VideoStreamApplication [main] No active profile set, falling back to default profiles: default
+2020-01-02 01:10:53,049 INFO org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5276e6b0: startup date [Thu Jan 02 01:10:53 GMT 2020]; root of context hierarchy
+2020-01-02 01:10:55,212 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-01-02 01:10:55,252 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2020-01-02 01:10:55,253 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-01-02 01:10:55,263 INFO org.apache.catalina.core.AprLifecycleListener [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;D:\work\apache-maven-3.6.2\\BIN;C:\Program Files\Portugal Identity Card\;C:\Program Files\Git\cmd;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\AppData\Roaming\npm;D:\work\apps;D:\work\apps\Kubernetes\Minikube;D:\work\apps\Docker Toolbox;D:\work\apps\Docker Toolbox;D:\sts-bundle\sts-3.9.4.RELEASE;;.]
+2020-01-02 01:10:55,464 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2020-01-02 01:10:55,465 INFO org.springframework.web.context.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization completed in 2416 ms
+2020-01-02 01:10:55,871 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-02 01:10:55,871 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-02 01:10:55,872 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-02 01:10:55,872 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-02 01:10:55,872 INFO org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean [localhost-startStop-1] Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-01-02 01:10:55,872 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'jwtAuthenticationFilter' to: [/*]
+2020-01-02 01:10:55,873 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2020-01-02 01:10:55,951 WARN org.springframework.web.servlet.resource.ResourceHttpRequestHandler [main] Locations list is empty. No resources will be served unless a custom ResourceResolver is configured as an alternative to PathResourceResolver.
+2020-01-02 01:10:56,139 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 1f2a41e7-2f14-4ba4-bdb2-4f72262c5a94
+
+2020-01-02 01:10:56,313 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 01:10:56,375 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/Ping],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.movies.stream.controller.CheckController.Ping()
+2020-01-02 01:10:56,378 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.movies.stream.controller.StreamController.home(java.lang.String,java.lang.String,boolean)
+2020-01-02 01:10:56,378 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/byterange],methods=[GET]}" onto public void com.movies.stream.controller.StreamController.byterange(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2020-01-02 01:10:56,385 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-02 01:10:56,386 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-02 01:10:56,448 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 01:10:56,448 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 01:10:56,462 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page template: index
+2020-01-02 01:10:56,496 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5fa23c, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ecdbab8, org.springframework.security.web.header.HeaderWriterFilter@5555ffcf, org.springframework.web.filter.CorsFilter@558756be, org.springframework.security.web.authentication.logout.LogoutFilter@212dfd39, com.movies.stream.security.JwtAuthenticationFilter@3ef7abac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19f7222e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29138d3a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@433348bc, org.springframework.security.web.session.SessionManagementFilter@71945bc0, org.springframework.security.web.access.ExceptionTranslationFilter@10fda3d0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4fc3c165]
+2020-01-02 01:10:56,822 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5276e6b0: startup date [Thu Jan 02 01:10:53 GMT 2020]; root of context hierarchy
+2020-01-02 01:10:57,017 INFO org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer [main] ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-01-02 01:10:57,111 INFO org.springframework.jmx.export.annotation.AnnotationMBeanExporter [main] Registering beans for JMX exposure on startup
+2020-01-02 01:10:57,156 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-02 01:10:57,166 INFO com.movies.stream.VideoStreamApplication [main] Started VideoStreamApplication in 4.678 seconds (JVM running for 5.107)
+2020-01-02 01:11:13,256 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-02 01:11:13,257 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2020-01-02 01:11:13,279 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2020-01-02 01:11:13,303 ERROR com.movies.stream.security.JwtAuthenticationEntryPoint [http-nio-8080-exec-1] Responding with unauthorized error. Message - Full authentication is required to access this resource
+2020-01-02 01:12:37,484 INFO com.movies.stream.VideoStreamApplication [main] Starting VideoStreamApplication on lucas-PC with PID 6048 (D:\Users\lucas\git\KnowledgeFactory\springboot-videostream\target\classes started by lucas in D:\Users\lucas\git\KnowledgeFactory\springboot-videostream)
+2020-01-02 01:12:37,486 INFO com.movies.stream.VideoStreamApplication [main] No active profile set, falling back to default profiles: default
+2020-01-02 01:12:37,525 INFO org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75329a49: startup date [Thu Jan 02 01:12:37 GMT 2020]; root of context hierarchy
+2020-01-02 01:12:38,564 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-01-02 01:12:38,578 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2020-01-02 01:12:38,578 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-01-02 01:12:38,582 INFO org.apache.catalina.core.AprLifecycleListener [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;D:\work\apache-maven-3.6.2\\BIN;C:\Program Files\Portugal Identity Card\;C:\Program Files\Git\cmd;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\AppData\Roaming\npm;D:\work\apps;D:\work\apps\Kubernetes\Minikube;D:\work\apps\Docker Toolbox;D:\work\apps\Docker Toolbox;D:\sts-bundle\sts-3.9.4.RELEASE;;.]
+2020-01-02 01:12:38,640 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2020-01-02 01:12:38,640 INFO org.springframework.web.context.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1115 ms
+2020-01-02 01:12:38,794 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-02 01:12:38,795 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-02 01:12:38,795 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-02 01:12:38,795 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-02 01:12:38,795 INFO org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean [localhost-startStop-1] Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-01-02 01:12:38,795 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'jwtAuthenticationFilter' to: [/*]
+2020-01-02 01:12:38,795 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2020-01-02 01:12:38,828 WARN org.springframework.web.servlet.resource.ResourceHttpRequestHandler [main] Locations list is empty. No resources will be served unless a custom ResourceResolver is configured as an alternative to PathResourceResolver.
+2020-01-02 01:12:38,894 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: e8b3cd7c-ff19-486d-ac88-b8871a90e71a
+
+2020-01-02 01:12:39,006 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 01:12:39,038 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/Ping],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.movies.stream.controller.CheckController.Ping()
+2020-01-02 01:12:39,041 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.movies.stream.controller.StreamController.home(java.lang.String,java.lang.String,boolean)
+2020-01-02 01:12:39,041 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/byterange],methods=[GET]}" onto public void com.movies.stream.controller.StreamController.byterange(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2020-01-02 01:12:39,044 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-02 01:12:39,045 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-02 01:12:39,075 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 01:12:39,075 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 01:12:39,080 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page template: index
+2020-01-02 01:12:39,101 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ba26eb0, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b22a1cc, org.springframework.security.web.header.HeaderWriterFilter@29eda4f8, org.springframework.web.filter.CorsFilter@435e60ff, org.springframework.security.web.authentication.logout.LogoutFilter@44c13103, com.movies.stream.security.JwtAuthenticationFilter@7e8a6520, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2418ba04, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e8e0dec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17d32e9b, org.springframework.security.web.session.SessionManagementFilter@a18649a, org.springframework.security.web.access.ExceptionTranslationFilter@710d89e2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f725306]
+2020-01-02 01:12:39,257 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75329a49: startup date [Thu Jan 02 01:12:37 GMT 2020]; root of context hierarchy
+2020-01-02 01:12:39,377 INFO org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer [main] ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-01-02 01:12:39,440 INFO org.springframework.jmx.export.annotation.AnnotationMBeanExporter [main] Registering beans for JMX exposure on startup
+2020-01-02 01:12:39,467 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-02 01:12:39,471 INFO com.movies.stream.VideoStreamApplication [main] Started VideoStreamApplication in 2.21 seconds (JVM running for 2.762)
+2020-01-02 01:12:50,384 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-02 01:12:50,384 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2020-01-02 01:12:50,396 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2020-01-02 01:15:40,869 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2020-01-02 01:15:40,869 INFO org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [RMI TCP Connection(2)-127.0.0.1] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75329a49: startup date [Thu Jan 02 01:12:37 GMT 2020]; root of context hierarchy
+2020-01-02 01:15:40,871 INFO org.springframework.jmx.export.annotation.AnnotationMBeanExporter [RMI TCP Connection(2)-127.0.0.1] Unregistering JMX-exposed beans on shutdown
+2020-01-02 01:15:46,615 INFO com.movies.stream.VideoStreamApplication [main] Starting VideoStreamApplication on lucas-PC with PID 20320 (D:\Users\lucas\git\KnowledgeFactory\springboot-videostream\target\classes started by lucas in D:\Users\lucas\git\KnowledgeFactory\springboot-videostream)
+2020-01-02 01:15:46,617 INFO com.movies.stream.VideoStreamApplication [main] No active profile set, falling back to default profiles: default
+2020-01-02 01:15:46,654 INFO org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48fa0f47: startup date [Thu Jan 02 01:15:46 GMT 2020]; root of context hierarchy
+2020-01-02 01:15:47,698 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-01-02 01:15:47,712 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2020-01-02 01:15:47,713 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-01-02 01:15:47,716 INFO org.apache.catalina.core.AprLifecycleListener [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;D:\work\apache-maven-3.6.2\\BIN;C:\Program Files\Portugal Identity Card\;C:\Program Files\Git\cmd;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\AppData\Roaming\npm;D:\work\apps;D:\work\apps\Kubernetes\Minikube;D:\work\apps\Docker Toolbox;D:\work\apps\Docker Toolbox;D:\sts-bundle\sts-3.9.4.RELEASE;;.]
+2020-01-02 01:15:47,771 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2020-01-02 01:15:47,771 INFO org.springframework.web.context.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1117 ms
+2020-01-02 01:15:47,931 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-02 01:15:47,931 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-02 01:15:47,931 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-02 01:15:47,931 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-02 01:15:47,932 INFO org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean [localhost-startStop-1] Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-01-02 01:15:47,932 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'jwtAuthenticationFilter' to: [/*]
+2020-01-02 01:15:47,932 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2020-01-02 01:15:47,964 WARN org.springframework.web.servlet.resource.ResourceHttpRequestHandler [main] Locations list is empty. No resources will be served unless a custom ResourceResolver is configured as an alternative to PathResourceResolver.
+2020-01-02 01:15:48,028 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 87680fdb-cb62-4cbe-9d39-0d90a02868bb
+
+2020-01-02 01:15:48,136 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 01:15:48,170 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/Ping],methods=[GET]}" onto public java.lang.String com.movies.stream.controller.CheckController.Ping()
+2020-01-02 01:15:48,172 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.movies.stream.controller.StreamController.home(java.lang.String,java.lang.String,boolean)
+2020-01-02 01:15:48,172 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/byterange],methods=[GET]}" onto public void com.movies.stream.controller.StreamController.byterange(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2020-01-02 01:15:48,176 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-02 01:15:48,176 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-02 01:15:48,207 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 01:15:48,208 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 01:15:48,213 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page template: index
+2020-01-02 01:15:48,234 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2412a42b, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b9776f5, org.springframework.security.web.header.HeaderWriterFilter@6a9b9909, org.springframework.web.filter.CorsFilter@45404d5, org.springframework.security.web.authentication.logout.LogoutFilter@42714a7, com.movies.stream.security.JwtAuthenticationFilter@911cfe1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79d9214d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a18649a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29138d3a, org.springframework.security.web.session.SessionManagementFilter@4fc142ec, org.springframework.security.web.access.ExceptionTranslationFilter@bfc14b9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25d2f66]
+2020-01-02 01:15:48,390 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48fa0f47: startup date [Thu Jan 02 01:15:46 GMT 2020]; root of context hierarchy
+2020-01-02 01:15:48,509 INFO org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer [main] ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-01-02 01:15:48,573 INFO org.springframework.jmx.export.annotation.AnnotationMBeanExporter [main] Registering beans for JMX exposure on startup
+2020-01-02 01:15:48,621 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-02 01:15:48,624 INFO com.movies.stream.VideoStreamApplication [main] Started VideoStreamApplication in 2.238 seconds (JVM running for 2.791)
+2020-01-02 01:16:11,488 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-3] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-02 01:16:11,489 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] FrameworkServlet 'dispatcherServlet': initialization started
+2020-01-02 01:16:11,501 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2020-01-02 01:16:54,629 ERROR com.movies.stream.security.JwtAuthenticationEntryPoint [http-nio-8080-exec-5] Responding with unauthorized error. Message - Full authentication is required to access this resource
+2020-01-02 01:17:05,708 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2020-01-02 01:17:05,708 INFO org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [RMI TCP Connection(2)-127.0.0.1] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48fa0f47: startup date [Thu Jan 02 01:15:46 GMT 2020]; root of context hierarchy
+2020-01-02 01:17:05,710 INFO org.springframework.jmx.export.annotation.AnnotationMBeanExporter [RMI TCP Connection(2)-127.0.0.1] Unregistering JMX-exposed beans on shutdown
+2020-01-02 01:17:20,582 INFO com.movies.stream.VideoStreamApplication [main] Starting VideoStreamApplication on lucas-PC with PID 21520 (D:\Users\lucas\git\KnowledgeFactory\springboot-videostream\target\classes started by lucas in D:\Users\lucas\git\KnowledgeFactory\springboot-videostream)
+2020-01-02 01:17:20,584 INFO com.movies.stream.VideoStreamApplication [main] No active profile set, falling back to default profiles: default
+2020-01-02 01:17:20,625 INFO org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@794cb805: startup date [Thu Jan 02 01:17:20 GMT 2020]; root of context hierarchy
+2020-01-02 01:17:21,699 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-01-02 01:17:21,713 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2020-01-02 01:17:21,714 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-01-02 01:17:21,717 INFO org.apache.catalina.core.AprLifecycleListener [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;D:\work\apache-maven-3.6.2\\BIN;C:\Program Files\Portugal Identity Card\;C:\Program Files\Git\cmd;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\AppData\Roaming\npm;D:\work\apps;D:\work\apps\Kubernetes\Minikube;D:\work\apps\Docker Toolbox;D:\work\apps\Docker Toolbox;D:\sts-bundle\sts-3.9.4.RELEASE;;.]
+2020-01-02 01:17:21,771 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2020-01-02 01:17:21,772 INFO org.springframework.web.context.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1147 ms
+2020-01-02 01:17:21,926 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-02 01:17:21,926 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-02 01:17:21,926 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-02 01:17:21,926 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-02 01:17:21,926 INFO org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean [localhost-startStop-1] Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-01-02 01:17:21,927 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'jwtAuthenticationFilter' to: [/*]
+2020-01-02 01:17:21,927 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2020-01-02 01:17:21,958 WARN org.springframework.web.servlet.resource.ResourceHttpRequestHandler [main] Locations list is empty. No resources will be served unless a custom ResourceResolver is configured as an alternative to PathResourceResolver.
+2020-01-02 01:17:22,021 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: c644485e-7ee3-415d-989f-d5518eb412a5
+
+2020-01-02 01:17:22,133 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 01:17:22,169 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/ping],methods=[GET]}" onto public java.lang.String com.movies.stream.controller.CheckController.Ping()
+2020-01-02 01:17:22,171 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.movies.stream.controller.StreamController.home(java.lang.String,java.lang.String,boolean)
+2020-01-02 01:17:22,171 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/byterange],methods=[GET]}" onto public void com.movies.stream.controller.StreamController.byterange(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2020-01-02 01:17:22,175 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-02 01:17:22,175 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-02 01:17:22,206 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 01:17:22,206 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 01:17:22,211 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page template: index
+2020-01-02 01:17:22,232 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@741f8dbe, org.springframework.security.web.context.SecurityContextPersistenceFilter@14229fa7, org.springframework.security.web.header.HeaderWriterFilter@79d9214d, org.springframework.web.filter.CorsFilter@212dfd39, org.springframework.security.web.authentication.logout.LogoutFilter@55a88417, com.movies.stream.security.JwtAuthenticationFilter@43748bfd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7158daf2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a389761, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a2ddf26, org.springframework.security.web.session.SessionManagementFilter@2b22a1cc, org.springframework.security.web.access.ExceptionTranslationFilter@34b27915, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@496a31da]
+2020-01-02 01:17:22,387 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@794cb805: startup date [Thu Jan 02 01:17:20 GMT 2020]; root of context hierarchy
+2020-01-02 01:17:22,507 INFO org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer [main] ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-01-02 01:17:22,570 INFO org.springframework.jmx.export.annotation.AnnotationMBeanExporter [main] Registering beans for JMX exposure on startup
+2020-01-02 01:17:22,600 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-02 01:17:22,603 INFO com.movies.stream.VideoStreamApplication [main] Started VideoStreamApplication in 2.251 seconds (JVM running for 2.795)
+2020-01-02 01:17:26,065 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-02 01:17:26,066 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2020-01-02 01:17:26,079 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2020-01-02 01:17:26,096 ERROR com.movies.stream.security.JwtAuthenticationEntryPoint [http-nio-8080-exec-1] Responding with unauthorized error. Message - Full authentication is required to access this resource
+2020-01-02 01:17:57,727 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2020-01-02 01:17:57,728 INFO org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [RMI TCP Connection(2)-127.0.0.1] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@794cb805: startup date [Thu Jan 02 01:17:20 GMT 2020]; root of context hierarchy
+2020-01-02 01:17:57,729 INFO org.springframework.jmx.export.annotation.AnnotationMBeanExporter [RMI TCP Connection(2)-127.0.0.1] Unregistering JMX-exposed beans on shutdown
+2020-01-02 01:18:02,857 INFO com.movies.stream.VideoStreamApplication [main] Starting VideoStreamApplication on lucas-PC with PID 13536 (D:\Users\lucas\git\KnowledgeFactory\springboot-videostream\target\classes started by lucas in D:\Users\lucas\git\KnowledgeFactory\springboot-videostream)
+2020-01-02 01:18:02,859 INFO com.movies.stream.VideoStreamApplication [main] No active profile set, falling back to default profiles: default
+2020-01-02 01:18:02,895 INFO org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4313f5bc: startup date [Thu Jan 02 01:18:02 GMT 2020]; root of context hierarchy
+2020-01-02 01:18:03,922 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-01-02 01:18:03,936 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2020-01-02 01:18:03,936 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-01-02 01:18:03,940 INFO org.apache.catalina.core.AprLifecycleListener [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;D:\work\apache-maven-3.6.2\\BIN;C:\Program Files\Portugal Identity Card\;C:\Program Files\Git\cmd;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\AppData\Roaming\npm;D:\work\apps;D:\work\apps\Kubernetes\Minikube;D:\work\apps\Docker Toolbox;D:\work\apps\Docker Toolbox;D:\sts-bundle\sts-3.9.4.RELEASE;;.]
+2020-01-02 01:18:03,994 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2020-01-02 01:18:03,994 INFO org.springframework.web.context.ContextLoader [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1099 ms
+2020-01-02 01:18:04,148 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-02 01:18:04,148 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-02 01:18:04,148 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-02 01:18:04,148 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-02 01:18:04,149 INFO org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean [localhost-startStop-1] Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-01-02 01:18:04,149 INFO org.springframework.boot.web.servlet.FilterRegistrationBean [localhost-startStop-1] Mapping filter: 'jwtAuthenticationFilter' to: [/*]
+2020-01-02 01:18:04,149 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2020-01-02 01:18:04,181 WARN org.springframework.web.servlet.resource.ResourceHttpRequestHandler [main] Locations list is empty. No resources will be served unless a custom ResourceResolver is configured as an alternative to PathResourceResolver.
+2020-01-02 01:18:04,243 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 33ad0812-723d-432e-af6a-34dcc982771b
+
+2020-01-02 01:18:04,352 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 01:18:04,385 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/ping],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.movies.stream.controller.CheckController.ping()
+2020-01-02 01:18:04,387 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.movies.stream.controller.StreamController.home(java.lang.String,java.lang.String,boolean)
+2020-01-02 01:18:04,387 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/byterange],methods=[GET]}" onto public void com.movies.stream.controller.StreamController.byterange(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2020-01-02 01:18:04,390 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-02 01:18:04,391 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-02 01:18:04,421 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 01:18:04,421 INFO org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 01:18:04,426 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page template: index
+2020-01-02 01:18:04,447 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2412a42b, org.springframework.security.web.context.SecurityContextPersistenceFilter@1dd7796b, org.springframework.security.web.header.HeaderWriterFilter@75361cf6, org.springframework.web.filter.CorsFilter@45404d5, org.springframework.security.web.authentication.logout.LogoutFilter@3ee69ad8, com.movies.stream.security.JwtAuthenticationFilter@6c89de67, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57402ba1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62573c86, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29138d3a, org.springframework.security.web.session.SessionManagementFilter@5e048149, org.springframework.security.web.access.ExceptionTranslationFilter@6a9b9909, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25d2f66]
+2020-01-02 01:18:04,607 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4313f5bc: startup date [Thu Jan 02 01:18:02 GMT 2020]; root of context hierarchy
+2020-01-02 01:18:04,728 INFO org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer [main] ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-01-02 01:18:04,790 INFO org.springframework.jmx.export.annotation.AnnotationMBeanExporter [main] Registering beans for JMX exposure on startup
+2020-01-02 01:18:04,817 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-02 01:18:04,820 INFO com.movies.stream.VideoStreamApplication [main] Started VideoStreamApplication in 2.185 seconds (JVM running for 2.728)
+2020-01-02 01:18:08,188 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-02 01:18:08,188 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] FrameworkServlet 'dispatcherServlet': initialization started
+2020-01-02 01:18:08,200 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms

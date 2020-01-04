@@ -1,4 +1,5 @@
 FROM maven:3.5-jdk-8-alpine as build
+WORKDIR /movies-videostream
 RUN mvn install
 
 FROM openjdk:8u131-jdk-alpine

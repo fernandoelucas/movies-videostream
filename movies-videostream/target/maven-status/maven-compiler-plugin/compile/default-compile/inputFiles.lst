@@ -1,0 +1,13 @@
+C:\Users\lucas\git\docker\movies-videostream\movies-videostream\src\main\java\com\movies\stream\security\JwtAuthentication.java
+C:\Users\lucas\git\docker\movies-videostream\movies-videostream\src\main\java\com\movies\stream\security\UserPrincipal.java
+C:\Users\lucas\git\docker\movies-videostream\movies-videostream\src\main\java\com\movies\stream\config\WebMvcConfig.java
+C:\Users\lucas\git\docker\movies-videostream\movies-videostream\src\main\java\com\movies\stream\entity\Role.java
+C:\Users\lucas\git\docker\movies-videostream\movies-videostream\src\main\java\com\movies\stream\entity\User.java
+C:\Users\lucas\git\docker\movies-videostream\movies-videostream\src\main\java\com\movies\stream\controller\StreamController.java
+C:\Users\lucas\git\docker\movies-videostream\movies-videostream\src\main\java\com\movies\stream\controller\CheckController.java
+C:\Users\lucas\git\docker\movies-videostream\movies-videostream\src\main\java\com\movies\stream\VideoStreamApplication.java
+C:\Users\lucas\git\docker\movies-videostream\movies-videostream\src\main\java\com\movies\stream\handler\HttpRequestHandler.java
+C:\Users\lucas\git\docker\movies-videostream\movies-videostream\src\main\java\com\movies\stream\security\JwtTokenProvider.java
+C:\Users\lucas\git\docker\movies-videostream\movies-videostream\src\main\java\com\movies\stream\security\JwtAuthenticationFilter.java
+C:\Users\lucas\git\docker\movies-videostream\movies-videostream\src\main\java\com\movies\stream\config\SecurityConfig.java
+C:\Users\lucas\git\docker\movies-videostream\movies-videostream\src\main\java\com\movies\stream\security\JwtAuthenticationEntryPoint.java

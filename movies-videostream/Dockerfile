@@ -1,10 +1,8 @@
-FROM maven:3.5-jdk-8-alpine as build
-COPY ./ ./
-WORKDIR /movies-videostream
-RUN echo "$PWD"
-RUN mvn install
-
-RUN echo "$PWD"
+#FROM maven:3.5-jdk-8-alpine as build
+#COPY ./ ./
+#WORKDIR /movies-videostream
+#RUN echo "$PWD"
+#RUN mvn install
 
 
 FROM openjdk:8u131-jdk-alpine

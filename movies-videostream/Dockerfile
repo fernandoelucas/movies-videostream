@@ -8,7 +8,7 @@ RUN echo "$PWD"
 
 
 FROM openjdk:8u131-jdk-alpine
-ADD ./movies-videostream-0.0.1-SNAPSHOT.jar app-movies-videostream.jar
+ADD /movies-videostream-0.0.1-SNAPSHOT.jar app-movies-videostream.jar
 EXPOSE 8010
 ENTRYPOINT ["java","-jar","/app-movies-videostream.jar"] 
 
